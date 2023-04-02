@@ -1,0 +1,388 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    scroll-behavior: smooth;
+    color: #FFC0CB;
+    list-style:none;
+    
+}
+section{
+    height: 100vh;
+}
+
+.logo{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+    color: #FFC0CB;
+    font-size: xx-large;
+  
+}
+.navbar{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 35px;
+   
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+
+}
+.fa-bars{
+    display:none;
+   
+}
+nav ul{
+    display: flex;
+    position: absolute;
+}
+.navs {
+    display: flex;
+   
+}
+
+
+.navs li a {
+    display: block;
+    font-size: 20px;
+    padding: 0px 40px;
+   
+    text-decoration: none;
+}
+
+.navs a:hover{
+    color:#FF69B4;	
+}
+.homee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFC0CB;
+    text-align: center;
+    height: 100vh;
+    
+}
+
+.homee h2{
+    font-size:80px;
+}
+.homee h3{
+    font-size:40px;
+    margin-bottom: 20px;
+    background-color: transparent;
+
+
+}
+.buttons{
+    display: flex;
+    background-color: transparent;
+
+    
+}
+.button1{
+    font-size:20px;
+    color:black;
+    background-color:pink ;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: solid 2px pink;
+}
+.button2{
+    font-size:20px;
+    color:pink;
+    border: solid 2px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+
+}
+.aboutme img{
+    max-width:100%
+    width:700px;
+    height:850px;
+    object-fit:cover;
+}
+.aboutme p{
+    font-size: 25px;
+    text-align: center;
+    margin-left: 150px;
+}
+.project-text{
+    font-size: 25px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.aboutme-items{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fa-solid, .fa-brands{
+    color: pink;
+    font-size: 40px;
+    padding: 30px 20px;
+}
+section h1{
+    text-align: center;
+    font-size:60px;
+    margin-bottom:150px;
+    margin-top:250px;
+}
+
+.gallery, .cards-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:auto;
+
+}
+.pic1{
+    max-width: 100%;
+    width:400px;
+    height:400px;
+    object-fit:scale-down;
+    margin-bottom: 40px;
+}
+
+.cards{
+    border-radius: 5px;
+    border: solid 2px pink;
+    margin-right:70px;
+    text-align: center;
+   
+}
+.cards img{
+    object-fit:cover;
+    height: 300px;
+    width:100%;
+}
+.card-text{
+    padding:10px;
+}
+.card-text p{
+    font-size:20px;
+}
+
+.cards .button1{
+    margin:10px;
+    padding: 8px 10px;
+}
+@media (max-width:480px){
+    .fa-bars{
+        display:block;
+        
+    }  
+     
+    nav ul{
+        position: absolute;
+       flex-direction: column;
+       width: 100%;
+       top:55px;
+       height:100vh;
+       align-items: flex-start;
+      
+    }
+   
+    .navs {
+        display: none;
+        width: 100%;
+    }
+   
+
+    .navs ul li a{
+       
+        padding: 30px 150px;
+    }
+    .aboutme img{
+        max-width:100%
+        width:400px;
+        height:550px;
+        object-fit:cover;
+    }
+    .aboutme p{
+        font-size: 25px;
+        text-align: center;
+    }
+    .navs.active {
+     
+        display: flex;
+       
+        flex-direction: column;
+        
+    }
+    .one{
+        margin-top: 30%;
+    }
+    .homee{
+        margin-top:20px;
+        padding: 40px;
+    }
+    nav a{
+        display: none;
+    }
+    .homee h2{
+        font-size:60px;
+    }
+    .homee h3{
+        font-size:30px;
+    }
+    .aboutme{
+        
+        padding:0 50px;
+    }  
+    .aboutme p{
+        margin-top: 20px;
+        font-size: 1px;
+    }
+   
+    .fa-brands{
+        color: pink;
+    font-size: 30px; 
+    }
+    .gallery,.cards-container{
+        padding:50px;
+        display: grid;
+        grid-template-columns:(1fr);
+        margin:auto;
+    }
+    .skills{
+        display: flex;
+    }
+    .cards{
+        margin-bottom: 60px;
+        border-radius: 5px;
+        border: solid 2px pink;
+        margin-right:0;
+        text-align: center;
+       
+    }
+    .cards .button1{
+        font-size: 15px;
+        font-weight: semi-bold;
+    }
+    #gallery{
+        margin-top: 1200px;
+    }
+    
+    #projects{
+        margin-top:650px;
+    }
+}
+
+@media (max-width:768px){
+    .fa-bars{
+        display:block;
+        
+    }  
+    .aboutme img{
+        max-width:100%
+        width:400px;
+        height:550px;
+        object-fit:cover;
+    }
+    .aboutme p{
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0;
+    }
+    nav ul{
+        position: absolute;
+       flex-direction: column;
+       width: 100%;
+       top:55px;
+       height:100vh;
+       align-items: flex-start;
+      
+    }
+   
+    .navs {
+        display: none;
+        width: 100%;
+    }
+   
+
+    .navs ul li a{
+       
+        padding: 30px 150px;
+    }
+
+    .navs.active {
+     
+        display: flex;
+       
+        flex-direction: column;
+        
+    }
+    .one{
+        margin-top: 30%;
+    }
+  
+    .homee{
+        margin-top:60px;
+        padding: 70px;
+    }
+   
+    .aboutme{
+        flex-direction: column;
+        padding:0 70px;
+        margin: auto;
+    }  
+    .aboutme p, 
+    .project-text{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    #projects{
+        padding: 0 70px;
+    }
+    section h1{
+    margin-bottom:25px;
+    margin-top:400px;
+    font-size: 40px;
+    }
+    .pic1{
+        max-width: 100%;
+        width:500px;
+        height:400px;
+        object-fit:scale-down;
+        margin-bottom: 40px;
+    }
+    
+    .gallery,.cards-container{
+        width:100%;
+        padding:100px;
+        display: grid;
+        grid-template-columns:1fr;
+        margin:auto;
+    }
+      .cards{
+        margin-bottom: 60px;
+        border-radius: 5px;
+        border: solid 2px pink;
+        margin-right:0;
+        text-align: center;
+       
+    }
+    #gallery{
+        margin-top:900px;
+    }
+    
+}
+
